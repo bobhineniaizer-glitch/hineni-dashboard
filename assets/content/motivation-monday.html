@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.card {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: 80px; text-align: center; position: relative; overflow: hidden;
+}
+.card::before {
+    content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 50%);
+}
+.quote { color: #fff; font-size: 52px; font-weight: 700; line-height: 1.3; margin-bottom: 40px; z-index: 1; }
+.highlight { color: #FFD700; }
+.sub { color: #aaa; font-size: 24px; margin-bottom: 60px; z-index: 1; }
+.logo { color: #FFD700; font-size: 36px; font-weight: 800; letter-spacing: 4px; z-index: 1; }
+.tagline { color: #666; font-size: 18px; margin-top: 10px; z-index: 1; }
+</style></head><body>
+<div class="card">
+    <div class="quote">The difference between a working actor and a struggling actor?<br><br>It's not talent.<br><br>It's being <span class="highlight">SEEN</span> by the right people.</div>
+    <div class="sub">Stop sending applications into the void.</div>
+    <div class="logo">HINENI</div>
+    <div class="tagline">Here I Am</div>
+</div>
+</body></html>
